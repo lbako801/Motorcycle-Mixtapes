@@ -1,0 +1,42 @@
+{
+  "name": "motorcycle-mixtapes",
+  "version": "1.0.0",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-handlebars": "^6.0.7",
+    "express-session": "^1.17.3",
+    "handlebars": "^4.7.7",
+    "mysql2": "^3.1.2",
+    "sequelize": "^6.28.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.34.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "nodemon": "^2.0.20",
+    "prettier": "^2.8.4"
+  },
+  "eslintConfig": {
+    "extends": [
+      "eslint:recommended",
+      "plugin:prettier/recommended"
+    ]
+  },
+  "description": "A blog that features curated playlists of music for different types of motorcycle rides, with posts that provide background on the music and how it enhances the experience of riding.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lbako801/Motorcycle-Mixtapes.git"
+  },
+  "author": "Loren Bako (GH- lbako801)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lbako801/Motorcycle-Mixtapes/issues"
+  },
+  "homepage": "https://github.com/lbako801/Motorcycle-Mixtapes#readme"
+}
