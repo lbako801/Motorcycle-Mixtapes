@@ -1,22 +1,5 @@
-const Sequelize = require('sequelize');
-const sequelize = new Sequelize('database', 'username', 'password', {
-  host: 'localhost',
-  dialect: 'mysql',
-});
+const User = require("./user");
+const Post = require("./post");
+const Comment = require("./comment");
 
-const models = {
-  User: sequelize.import('./user'),
-  Post: sequelize.import('./post'),
-  Comment: sequelize.import('./comment'),
-};
-
-Object.keys(models).forEach((modelName) => {
-  if ('associate' in models[modelName]) {
-    models[modelName].associate(models);
-  }
-});
-
-models.sequelize = sequelize;
-models.Sequelize = Sequelize;
-
-module.exports = models;
+module.exports = { User, Post, Comment };

@@ -1,0 +1,54 @@
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Monoton&family=Rubik&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="icon" href="./images/logos/favicon.png"/>
+    <link rel="stylesheet" type="text/css" href="./css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="./css/home.css" />
+    <title>Motorcycle Mixtapes | Let the Music Make the Journey</title>
+  </head>
+
+  <body class="home-hero">
+    {{#if user}}
+      <!-- Navigation menu for logged in users -->
+      <div class="nav-container">
+        <a href="/">Home</a>
+        <a href="/dashboard">Dashboard</a>
+        <a href="/logout">Logout</a>
+      </div>
+    {{else}}
+      <!-- Navigation menu for non-logged in users -->
+      <div class="nav-container">
+
+        <div class="nav-brand">
+          <img href="/" class="nav-logo" src="./images/logos/nav-logo.png">           
+        </div>
+
+        <div class="nav-links">
+
+          <a href="/">HOME</a>
+          <a href="/login">SIGN IN</a>
+          
+        </div>
+
+      </div>
+    {{/if}}
+
+          <div>
+              {{{body}}}
+          </div>
+
+    <footer>
+      &copy; 2023 Motorcycle Mixtapes
+    </footer>
+  </body>
+
+</html>

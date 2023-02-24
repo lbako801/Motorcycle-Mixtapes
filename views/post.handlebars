@@ -1,0 +1,14 @@
+<div class="post">
+  <h2>{{title}}</h2>
+  <p>Posted by {{username}} on {{date}}</p>
+  <hr>
+  <p>{{{body}}}</p>
+  <hr>
+  <form action="/comment" method="post">
+    <h3>Add a Comment</h3>
+    <label for="comment-textbox">Comment:</label>
+    <textarea id="comment-textbox" name="comment" rows="5" cols="50" required></textarea>
+    <br>
+    <button type="submit">Submit</button>
+  </form>
+</div>
