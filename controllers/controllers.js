@@ -1,25 +1,9 @@
-const router = require("express").Router();
-const { User, Post, Comment } = require("../models");
-// const withAuth = require('../utils/auth');
+const router = require('express').Router();
 
-router.get(
-  "/",
-  async (req, res) => {
+// const apiRoutes = require('./api');
+const viewroutes = require('./viewroutes');
 
-
-    res.render("home", {
-
-    });
-  }
-);
-
-router.get("/register", (req, res) => {
-
-  res.render("register");
-});
-
-router.get("/login", (req, res) => {
-  res.render("login");
-});
+router.use('/', viewroutes);
+// router.use('/api', apiRoutes);
 
 module.exports = router;
